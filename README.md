@@ -1,6 +1,6 @@
 # Word to PDF Converter
 
-![Word to PDF Converter](image_url) <!-- Replace with your image URL -->
+![Word to PDF Converter](https://github.com/shavybachata/PdfConverter/blob/master/Rapidfort.png)
 
 This is a simple application that allows users to upload a `.docx` file and convert it to a PDF. It consists of a backend built using **Node.js** and **Express** for handling file uploads and conversions, and a **React** frontend for a user-friendly interface.
 
@@ -71,25 +71,3 @@ This is a simple application that allows users to upload a `.docx` file and conv
 3. The backend converts the `.docx` file to a `.pdf` using the `docx-pdf` library.
 4. The converted `.pdf` file is sent back to the frontend for the user to download.
 
-### API Endpoint
-
-- **POST /convertFile**: 
-  - **Request body**: The uploaded `.docx` file (form-data).
-  - **Response**: The converted `.pdf` file.
-
-## File Structure
-
-```bash
-word-to-pdf-converter/
-├── backend/
-│   ├── app.js        # Backend code (Node.js + Express)
-│   ├── uploads/      # Folder for storing uploaded files
-│   └── files/        # Folder for storing converted PDF files
-└── frontend/
-    ├── src/
-    │   ├── App.js    # React component for frontend
-    │   ├── Home.js   # Home page with file upload and conversion UI
-    │   └── index.js  # React entry point
-    ├── public/
-    ├── package.json  # Frontend dependencies
-    └── .env          # Environment variables (if needed)
